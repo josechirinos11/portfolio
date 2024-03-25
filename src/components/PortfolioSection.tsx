@@ -10,7 +10,7 @@ const PortfolioSection = () => {
         <div className={styles.left}>
           <div className={styles.about}>
             <p>Hola me llamo <span>Jose Chirinos</span></p>
-            <p>Soy un desarrollador apasionado con experiencia en la creación de sitios web dinámicos y aplicaciones móviles innovadoras.".</p>
+            <p>Soy un desarrollador apasionado con experiencia en la creación de sitios web dinámicos y aplicaciones móviles innovadoras.</p>
           </div>
         </div>
         <div className={styles.right}>
