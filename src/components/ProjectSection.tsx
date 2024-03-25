@@ -84,7 +84,7 @@ const Projects = () => {
               descripcion: 'Este proyecto se centra en el desarrollo de una aplicación móvil utilizando React Native. Proporciona una experiencia de usuario fluida y nativa en dispositivos iOS y Android. Con React Native, se pueden crear aplicaciones móviles de alto rendimiento que aprovechan las funcionalidades nativas del dispositivo, como la cámara, el GPS y las notificaciones push.',
 
             tecnologias: 'React Native, Apollo Client, Storage',
-            enlace:'https://github.com/josechirinos11',
+            enlace:'https://github.com/josechirinos11/myCompanyReactNavive',
             imagen: imgReactNative
             })}
             >
@@ -99,7 +99,7 @@ const Projects = () => {
               proyecto: '2',
               descripcion: 'Este proyecto implementa un servidor GraphQL que se comunica con una base de datos MongoDB para gestionar la comunicación entre el cliente y el servidor. GraphQL es un lenguaje de consulta y manipulación de datos que permite a los clientes solicitar solo los datos que necesitan, mientras que MongoDB es una base de datos NoSQL altamente escalable y flexible.',
               tecnologias: 'GraphQL, Apollo Server, MongoDB' ,
-              enlace:'https://github.com/josechirinos11',
+              enlace:'https://github.com/josechirinos11/myCompanyGraphQL',
               imagen: imgGrpahql    
             })}
             >
@@ -116,7 +116,7 @@ const Projects = () => {
               proyecto: '3',
               descripcion: 'En este proyecto, se utiliza Node.js tanto para el desarrollo del backend como del frontend, creando así una aplicación fullstack. El backend se comunica con la base de datos Firebase para almacenar y recuperar datos en tiempo real, mientras que las plantillas Handlebars se utilizan para generar las vistas del frontend. Firebase proporciona una base de datos en tiempo real, autenticación de usuarios, almacenamiento de archivos y más, lo que permite construir aplicaciones web complejas de manera rápida y eficiente.',
               tecnologias: 'Nodejs, Express.js, Firebase'  ,
-              enlace:'https://github.com/josechirinos11',
+              enlace:'https://github.com/josechirinos11/myCompanyNodejs',
               imagen: imgNode      
             })}
             >
@@ -131,7 +131,7 @@ const Projects = () => {
               proyecto: '4',
               descripcion: 'Este proyecto se enfoca en el desarrollo del frontend utilizando React con Next.js. Next.js es un framework de React que facilita la creación de aplicaciones web con características avanzadas, como el renderizado del lado del servidor y la generación estática de páginas. Con Next.js, se puede mejorar la velocidad de carga y la optimización del SEO de la aplicación web.',
               tecnologias: 'React, Nextjs, Apollo Client',
-              enlace:'https://github.com/josechirinos11',
+              enlace:'https://github.com/josechirinos11/myCompanyNext',
               imagen: imgNext    
             })}
             >

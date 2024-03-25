@@ -17,7 +17,7 @@ const PortfolioSection = () => {
           
           <div className={styles.stat}>
             <h1>3</h1>
-            <p>Años<br></br> de Exériencia</p>
+            <p>Años<br></br> de Experiencia</p>
 
           </div>
         </div>
