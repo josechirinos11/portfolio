@@ -14,10 +14,10 @@ import './ProjectSwiper.css';
 import { EffectCoverflow, Pagination } from 'swiper/modules';
 
 import Image from 'next/image'
-import imgNext from '@/assets/imgnext.png'
-import imgGrpahql from '@/assets/imggraphql.png'
-import imgReactNative from '@/assets/imgreactnative.png'
-import imgNode from '@/assets/imgnode.png'
+import imgNext from '@/assets/CapturaNext.png'
+import imgGrpahql from '@/assets/CapturagraphQL.png'
+import imgReactNative from '@/assets/CapturaReactNative.jpg'
+import imgNode from '@/assets/CapturaNode.png'
 
 
 
@@ -51,13 +51,13 @@ const Projects = () => {
     <div className={styles.projectdiv}>
       <h1>Muestra de Proyecto</h1>
       <h2 className={styles.titulo}>
-          <span className={styles.orange}>My</span>
-          <span className={styles.blue}>Company</span>
-        </h2>
+        <span className={styles.orange}>My</span>
+        <span className={styles.blue}>Company</span>
+      </h2>
       <p className={styles.parrafo}>
-  Estoy en el desarrollo una aplicación llamada MyCompany, el cual tiene todo lo que se requiere para un perfil FullStack una solución integral dividida en cuatro Partes fundamentales. El backend, construido con GraphQL y MongoDB, garantiza un manejo eficiente de los datos respaldado por tecnologías sólidas ocupo otra forma de hacer el backend con Node.js y Firebase. El frontend, desarrollado en React con Next.js, proporciona una experiencia de usuario fluida y dinámica. Completando el ecosistema, la versión móvil está creada en React Native, asegurando una aplicación multiplataforma de alto rendimiento.
-</p>
-   <div className='projectswipercontainer'>
+        Estoy en el desarrollo una aplicación llamada MyCompany, el cual tiene todo lo que se requiere para un perfil FullStack una solución integral dividida en cuatro Partes fundamentales. El backend, construido con GraphQL y MongoDB, garantiza un manejo eficiente de los datos respaldado por tecnologías sólidas ocupo otra forma de hacer el backend con Node.js y Firebase. El frontend, desarrollado en React con Next.js, proporciona una experiencia de usuario fluida y dinámica. Completando el ecosistema, la versión móvil está creada en React Native, asegurando una aplicación multiplataforma de alto rendimiento.
+      </p>
+      <div className='projectswipercontainer'>
         <Swiper
           effect={'coverflow'}
           grabCursor={true}
@@ -79,14 +79,14 @@ const Projects = () => {
         >
           <SwiperSlide>
             <div className={styles.projectcard}
-            onClick={() => handleOpenModal({
-              proyecto: '1',
-              descripcion: 'Este proyecto se centra en el desarrollo de una aplicación móvil utilizando React Native. Proporciona una experiencia de usuario fluida y nativa en dispositivos iOS y Android. Con React Native, se pueden crear aplicaciones móviles de alto rendimiento que aprovechan las funcionalidades nativas del dispositivo, como la cámara, el GPS y las notificaciones push.',
+              onClick={() => handleOpenModal({
+                proyecto: '1',
+                descripcion: 'Este proyecto se centra en el desarrollo de una aplicación móvil utilizando React Native. Proporciona una experiencia de usuario fluida y nativa en dispositivos iOS y Android. Con React Native, se pueden crear aplicaciones móviles de alto rendimiento que aprovechan las funcionalidades nativas del dispositivo, como la cámara, el GPS y las notificaciones push.',
 
-            tecnologias: 'React Native, Apollo Client, Storage',
-            enlace:'https://github.com/josechirinos11/myCompanyReactNavive',
-            imagen: imgReactNative
-            })}
+                tecnologias: 'React Native, Apollo Client, Storage',
+                enlace: 'https://github.com/josechirinos11/myCompanyReactNavive',
+                imagen: imgReactNative
+              })}
             >
               <h1>Projecto</h1>
               <h1>con</h1>
@@ -95,13 +95,13 @@ const Projects = () => {
           </SwiperSlide>
           <SwiperSlide>
             <div className={styles.projectcard}
-            onClick={() => handleOpenModal({
-              proyecto: '2',
-              descripcion: 'Este proyecto implementa un servidor GraphQL que se comunica con una base de datos MongoDB para gestionar la comunicación entre el cliente y el servidor. GraphQL es un lenguaje de consulta y manipulación de datos que permite a los clientes solicitar solo los datos que necesitan, mientras que MongoDB es una base de datos NoSQL altamente escalable y flexible.',
-              tecnologias: 'GraphQL, Apollo Server, MongoDB' ,
-              enlace:'https://github.com/josechirinos11/myCompanyGraphQL',
-              imagen: imgGrpahql    
-            })}
+              onClick={() => handleOpenModal({
+                proyecto: '2',
+                descripcion: 'Este proyecto implementa un servidor GraphQL que se comunica con una base de datos MongoDB para gestionar la comunicación entre el cliente y el servidor. GraphQL es un lenguaje de consulta y manipulación de datos que permite a los clientes solicitar solo los datos que necesitan, mientras que MongoDB es una base de datos NoSQL altamente escalable y flexible.',
+                tecnologias: 'GraphQL, Apollo Server, MongoDB',
+                enlace: 'https://github.com/josechirinos11/myCompanyGraphQL',
+                imagen: imgGrpahql
+              })}
             >
               <h1>Projecto</h1>
               <h1>con</h1>
@@ -112,13 +112,13 @@ const Projects = () => {
           </SwiperSlide>
           <SwiperSlide>
             <div className={styles.projectcard}
-            onClick={() => handleOpenModal({
-              proyecto: '3',
-              descripcion: 'En este proyecto, se utiliza Node.js tanto para el desarrollo del backend como del frontend, creando así una aplicación fullstack. El backend se comunica con la base de datos Firebase para almacenar y recuperar datos en tiempo real, mientras que las plantillas Handlebars se utilizan para generar las vistas del frontend. Firebase proporciona una base de datos en tiempo real, autenticación de usuarios, almacenamiento de archivos y más, lo que permite construir aplicaciones web complejas de manera rápida y eficiente.',
-              tecnologias: 'Nodejs, Express.js, Firebase'  ,
-              enlace:'https://github.com/josechirinos11/myCompanyNodejs',
-              imagen: imgNode      
-            })}
+              onClick={() => handleOpenModal({
+                proyecto: '3',
+                descripcion: 'En este proyecto, se utiliza Node.js tanto para el desarrollo del backend como del frontend, creando así una aplicación fullstack. El backend se comunica con la base de datos Firebase para almacenar y recuperar datos en tiempo real, mientras que las plantillas Handlebars se utilizan para generar las vistas del frontend. Firebase proporciona una base de datos en tiempo real, autenticación de usuarios, almacenamiento de archivos y más, lo que permite construir aplicaciones web complejas de manera rápida y eficiente.',
+                tecnologias: 'Nodejs, Express.js, Firebase',
+                enlace: 'https://github.com/josechirinos11/myCompanyNodejs',
+                imagen: imgNode
+              })}
             >
               <h1>Projecto</h1>
               <h1>con</h1>
@@ -127,38 +127,40 @@ const Projects = () => {
           </SwiperSlide>
           <SwiperSlide>
             <div className={styles.projectcard}
-            onClick={() => handleOpenModal({
-              proyecto: '4',
-              descripcion: 'Este proyecto se enfoca en el desarrollo del frontend utilizando React con Next.js. Next.js es un framework de React que facilita la creación de aplicaciones web con características avanzadas, como el renderizado del lado del servidor y la generación estática de páginas. Con Next.js, se puede mejorar la velocidad de carga y la optimización del SEO de la aplicación web.',
-              tecnologias: 'React, Nextjs, Apollo Client',
-              enlace:'https://github.com/josechirinos11/myCompanyNext',
-              imagen: imgNext    
-            })}
+              onClick={() => handleOpenModal({
+                proyecto: '4',
+                descripcion: 'Este proyecto se enfoca en el desarrollo del frontend utilizando React con Next.js. Next.js es un framework de React que facilita la creación de aplicaciones web con características avanzadas, como el renderizado del lado del servidor y la generación estática de páginas. Con Next.js, se puede mejorar la velocidad de carga y la optimización del SEO de la aplicación web.',
+                tecnologias: 'React, Nextjs, Apollo Client',
+                enlace: 'https://github.com/josechirinos11/myCompanyNext',
+                imagen: imgNext
+              })}
             >
               <h1>Projecto</h1>
               <h1>con</h1>
               <h1>React y Nextjs</h1>
             </div>
           </SwiperSlide>
-         
+
         </Swiper>
       </div>
 
       {showModal && (
         <div className={styles.modalBackground}>
           <div className={styles.modalContent}>
-          <h2>Tecnologias: {tec}</h2>
-          <h2 className={styles.titulo}>
-          <span className={styles.orange}>My</span>
-          <span className={styles.blue}>Company</span>
-        </h2>
-        <p>Descripción: {descp}</p>
-      
-      <Image src={imagen} className={styles.imgproyecto} alt="imgproyecto" quality={100} />
-      <p>
-        GitHub:  
-        <a href={enlace} target="_blank" rel="noopener noreferrer">Repositorio</a>
-      </p>
+            <h2>Tecnologias: {tec}</h2>
+            <h2 className={styles.titulo}>
+              <span className={styles.orange}>My</span>
+              <span className={styles.blue}>Company</span>
+            </h2>
+            <p>Descripción: {descp}</p>
+
+            <div className={styles.imageContainer}>
+              <Image src={imagen} className={styles.imgproyecto} alt="imgproyecto" quality={100} />
+            </div>
+            <p>
+              GitHub:
+              <a href={enlace} target="_blank" rel="noopener noreferrer">Repositorio</a>
+            </p>
             <button className={styles.boton} onClick={handleCloseModal}>Cerrar</button>
           </div>
         </div>

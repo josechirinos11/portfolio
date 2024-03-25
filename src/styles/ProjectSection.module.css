@@ -5,7 +5,7 @@
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
-    z-index: 9999; /* Asegura que el modal esté en la parte superior */
+ z-index: 9999;   /*  Asegura que el modal esté en la parte superior */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,6 +31,7 @@
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s ease; /* Transición suave */
+ 
   }
   
   .modalContent button:hover {
@@ -55,14 +56,24 @@
     color: #2874A6; /* Color azul */
   }
 
+  .imageContainer {
+    max-width: 500px;
+    max-height: 50%; /* Establece la altura máxima deseada */
+    overflow: hidden; /* Oculta cualquier parte de la imagen que se desborde */
+    display: flex; /* Utiliza flexbox para centrar la imagen verticalmente */
+    justify-content: center; /* Centra la imagen verticalmente */
+    align-items: center; /* Centra la imagen horizontalmente */
+  }
+  
   .imgproyecto {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    width:30%;
-    height: 100%;
-    object-fit: cover;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
     object-position: center;
-}
+  }
+
 
 .parrafo {
   font-family: Arial, sans-serif;

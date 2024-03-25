@@ -8,6 +8,20 @@ import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 
+
+import Image from 'next/image'
+import imgNext from '@/assets/next.png'
+import imgGrpahql from '@/assets/graphql.png'
+import imgReactNative from '@/assets/reactnative.png'
+import imgNode from '@/assets/node.png'
+
+import imgGit from '@/assets/git.png'
+import imgReact from '@/assets/react.png'
+import imgJavascript from '@/assets/javascript.png'
+import imgMern from '@/assets/mern.png'
+
+
+
 import './ProjectSwiper.css';
 
 // import required modules
@@ -39,47 +53,51 @@ const Projects = () => {
         >
           <SwiperSlide>
             <div className={styles.projectcard}>
-              <h1>HTML</h1>
+              <h1>REACT</h1>
+              <Image src={imgReact} className={styles.imgproyecto} alt="imgproyecto" quality={100} />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className={styles.projectcard}>
-              <h1>CSS</h1>
+              <h1>JAVASCRIPT</h1>
+              <Image src={imgJavascript} className={styles.imgproyecto} alt="imgproyecto" quality={100} />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className={styles.projectcard}>
-              <h1>JS</h1>
+              <h1>GRAPHQL</h1>
+              <Image src={imgGrpahql} className={styles.imgproyecto} alt="imgproyecto" quality={100} />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className={styles.projectcard}>
+              <h1>REACT NATIVE</h1>
+              <Image src={imgReactNative} className={styles.imgproyecto} alt="imgproyecto" quality={100} />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className={styles.projectcard}>
+              <h1>NODEJS</h1>
+              <Image src={imgNode} className={styles.imgproyecto} alt="imgproyecto" quality={100} />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className={styles.projectcard}>
+              <h1>NEXT</h1>
+              <Image src={imgNext} className={styles.imgproyecto} alt="imgproyecto" quality={100} />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className={styles.projectcard}>
               <h1>MERN</h1>
+              <Image src={imgMern} className={styles.imgproyecto} alt="imgproyecto" quality={100} />
             </div>
           </SwiperSlide>
+          
           <SwiperSlide>
             <div className={styles.projectcard}>
-              <h1>C++</h1>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className={styles.projectcard}>
-              <h1>Python</h1>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className={styles.projectcard}>
-              <h1>Java</h1>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className={styles.projectcard}>
-              <h1>AWS</h1>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className={styles.projectcard}>
-              <h1>Git</h1>
+              <h1>GIT</h1>
+              <Image src={imgGit} className={styles.imgproyecto} alt="imgproyecto" quality={100} />
             </div>
           </SwiperSlide>
         </Swiper>
