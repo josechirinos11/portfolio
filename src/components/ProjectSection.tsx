@@ -31,7 +31,7 @@ const Projects = () => {
   const [enlace, setEnlace] = useState('');
   const [imagen, setImagen] = useState('');
 
-  const handleOpenModal = (proyecto) => {
+  const handleOpenModal = (proyecto: { proyecto: any; descripcion: any; tecnologias: any; enlace: any; imagen: any; }) => {
     console.log('modal  ', proyecto.proyecto)
     console.log('modal  ', proyecto.descripcion)
     console.log('modal  ', proyecto.tecnologias)
