@@ -157,7 +157,7 @@ const Projects = () => {
       <Image src={imagen} className={styles.imgproyecto} alt="imgproyecto" quality={100} />
       <p>
         GitHub:  
-        <a href="`${enlace}`" target="_blank" rel="noopener noreferrer">    {enlace}</a>
+        <a href={enlace} target="_blank" rel="noopener noreferrer">Repositorio</a>
       </p>
             <button className={styles.boton} onClick={handleCloseModal}>Cerrar</button>
           </div>
