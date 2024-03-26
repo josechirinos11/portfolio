@@ -145,7 +145,8 @@ const Projects = () => {
       </div>
 
       {showModal && (
-        <div className={styles.modalBackground}>
+        <div className={styles.modalBackground}
+        >
           <div className={styles.modalContent}>
             <h2>Tecnologias: {tec}</h2>
             <h2 className={styles.titulo}>
