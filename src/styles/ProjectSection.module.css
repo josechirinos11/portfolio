@@ -9,6 +9,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-left: 100px;
+    padding-right: 100px;
   }
   
   .modalContent {
@@ -17,6 +19,10 @@
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para un aspecto elevado */
     color: black;
+    display: flex; /* Utiliza flexbox para centrar vertical y horizontalmente */
+    flex-direction: column; /* Apila los elementos en una columna */
+    justify-content: center; /* Centra verticalmente el contenido */
+    align-items: center; /* Centra horizontalmente el contenido */
   }
   
   .modalContent h2 {
@@ -57,12 +63,12 @@
   }
 
   .imageContainer {
-    max-width: 500px;
-    max-height: 50%; /* Establece la altura máxima deseada */
-    overflow: hidden; /* Oculta cualquier parte de la imagen que se desborde */
-    display: flex; /* Utiliza flexbox para centrar la imagen verticalmente */
-    justify-content: center; /* Centra la imagen verticalmente */
-    align-items: center; /* Centra la imagen horizontalmente */
+    max-width: 300px; /* Establece el ancho máximo deseado */
+  max-height: 200px; /* Establece la altura máxima deseada */
+  overflow: hidden; /* Oculta cualquier parte de la imagen que se desborde */
+  display: flex; /* Utiliza flexbox para centrar la imagen verticalmente */
+  justify-content: center; /* Centra la imagen verticalmente */
+  align-items: center; /* Centra la imagen horizontalmente */
   }
   
   .imgproyecto {
@@ -72,6 +78,8 @@
     max-height: 100%;
     object-fit: contain;
     object-position: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 
 
