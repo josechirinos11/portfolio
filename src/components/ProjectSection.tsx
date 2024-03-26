@@ -15,7 +15,7 @@ import { EffectCoverflow, Pagination } from 'swiper/modules';
 
 import Image from 'next/image'
 import imgNext from '@/assets/CapturaNext.png'
-import imgGrpahql from '@/assets/CapturagraphQL.png'
+import imgGrpahql from '@/assets/Captura.png'
 import imgReactNative from '@/assets/CapturaReactNative.jpg'
 import imgNode from '@/assets/CapturaNode.png'
 
