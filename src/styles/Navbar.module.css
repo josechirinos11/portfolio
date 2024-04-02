@@ -1,12 +1,10 @@
 .sign {
-
   height: 80px;
   width: auto;
   object-fit: cover;
 }
 
 .navouter {
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,8 +13,8 @@
   position: fixed;
   top: 0;
   width: 100%;
-  /* box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); */
 }
+
 
 
 .right,
@@ -34,21 +32,37 @@
   font-size: 18px;
   border: none;
   padding: 3px 0px;
-
-  /* textborder */
   -webkit-text-stroke: 0.5px rgb(212, 212, 212);
+  transition: transform 0.3s ease;
+  overflow: hidden;
 }
 
 .right button:hover {
-  /* border-bottom: 1px solid white; */
-  color: white;
+  
   cursor: pointer;
-}
+color: black;
+  
+  background-color: #d1d5db;
+  
+  border-radius: 20px;
+  
+  border-color: #374151;
+  border-width: 1px;
 
+  
+  border-radius: 20px;
+box-shadow:  5px 5px 15px #5a5a5a,
+             -5px -5px 15px #ffffff;
+
+             font-weight: bold;
+
+             transform: scale(1.09);
+             width: calc(10% + 50px)
+             
+}
 
 .nav_toggler {
   display: none;
-  /* display: flex; */
   height: 44px;
   width: 44px;
   background-color: white;
@@ -63,8 +77,6 @@
 .nav_toggler:focus {
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
 }
-
-
 
 .nav_toggler span {
   height: 2px;
@@ -114,8 +126,6 @@
   }
 }
 
-
-
 @media (max-width: 500px) {
   .right {
     display: none;
@@ -123,23 +133,18 @@
   .acultar {
     display: none;
   }
-
   .nav_toggler {
     display: flex;
   }
-
-
   .right1 {
-
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
     position: absolute;
     top: 0px;
     right: 0px;
-
     width: 100%;
     background-color: rgba(0, 0, 0, 0.764);
     height: 100vh;
-}
+  }
 }

@@ -88,7 +88,7 @@ const Navbar = ({
             </div>
 
             {navActive && <div className={styles.right1}>
-                <button onClick={() => handleButtonClick('home')}>Inicio</button>
+                <button className={styles.buttonExampol} onClick={() => handleButtonClick('home')}>Inicio</button>
                 <button onClick={() => handleButtonClick('about')}>Acerca</button>
                 <button onClick={() => handleButtonClick('projects')}>Proyectos</button>
                 <button onClick={() => handleButtonClick('skills')}>Habilidades</button>
