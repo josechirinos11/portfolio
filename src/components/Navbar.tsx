@@ -51,8 +51,8 @@ const Navbar = ({
     const handleDownload = () => {
         // Crear un enlace de descarga invisible
         const link = document.createElement('a');
-        link.href = '/cvjosechirinosfinal.pdf'; // Ruta al archivo PDF
-        link.download = 'cvjosechirinosfinal.pdf'; // Nombre del archivo al descargar
+        link.href = '/CVJoseChirinosActualizado.pdf'; // Ruta al archivo PDF
+        link.download = 'CVJoseChirinosActualizado.pdf'; // Nombre del archivo al descargar
         document.body.appendChild(link);
         link.click();
         //document.body.removeChild(link); // Limpieza después de la descarga
