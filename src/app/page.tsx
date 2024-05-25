@@ -8,6 +8,7 @@ import SkillSection from "@/components/SkillSection";
 import Footer from "@/components/Footer";
 import SocialSection from "@/components/SocialSection";
 import ProjectSection from "@/components/ProjectSection"
+import Mern from "@/components/Mern";
 import { useRef } from "react";
 export default function Home() {
 
@@ -15,6 +16,9 @@ export default function Home() {
   const aboutRef = useRef<HTMLDivElement | null>(null); 
   const projectsRef = useRef<HTMLDivElement | null>(null); 
   const skillsRef = useRef<HTMLDivElement | null>(null); 
+  
+  const mernRef = useRef<HTMLDivElement | null>(null); 
+  
 
   const contactRef = useRef<HTMLDivElement | null>(null); 
 
@@ -25,7 +29,7 @@ export default function Home() {
         aboutRef={aboutRef}
         projectsRef={projectsRef}
         skillsRef={skillsRef}
-
+        mernRef={mernRef}
         contactRef={contactRef}
       />
 
@@ -35,6 +39,12 @@ export default function Home() {
       <div ref={aboutRef} id="about-section">
         <AboutSection />
       </div>
+
+      <div ref={mernRef} id="MERN">
+        <Mern />
+      </div>
+
+
       <div ref={projectsRef} id="projects-section">
 
         <ProjectSection />

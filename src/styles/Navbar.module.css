@@ -1,3 +1,32 @@
+.skillsMenu {
+  position: absolute;
+  top: calc(100% + 10px); /* Coloca el menú justo debajo del botón */
+  left: 0;
+  width: 200px; /* Ancho del menú */
+  background-color: white; /* Color de fondo del menú */
+  border: 1px solid #ccc; /* Borde del menú */
+  border-radius: 5px; /* Bordes redondeados */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra */
+  z-index: 999; /* Asegura que esté encima de otros elementos */
+  padding: 10px; /* Espaciado interno del menú */
+}
+
+.skillsMenu button {
+  display: block;
+  width: 100%;
+  padding: 5px 10px;
+  border: none;
+  background-color: transparent;
+  text-align: left;
+  cursor: pointer;
+}
+
+.skillsMenu button:hover {
+  background-color: #f4f4f4; /* Cambia el color de fondo al pasar el ratón */
+}
+
+
+
 .sign {
   height: 80px;
   width: auto;
@@ -13,6 +42,15 @@
   position: fixed;
   top: 0;
   width: 100%;
+}
+.left {
+  /* Otros estilos */
+  transition: transform 0.3s ease; /* Define una transición suave de 0.3 segundos para la propiedad transform */
+}
+
+.left :hover{
+  cursor: pointer;
+  transform: scale(0.9); 
 }
 
 

@@ -1,0 +1,57 @@
+.contenedor {
+background-color: red;
+width: 100%; /* El ancho del contenedor será el 100% del ancho de la página */
+height: 400px;
+  }
+  
+  .titulo {
+    font-size: 3rem; /* Tamaño de letra grande */
+    color: white; /* Color blanco */
+  }
+  
+
+  .skillsMenu {
+    display: none;
+    /* Estilos adicionales */
+    background-color: red;
+  }
+  
+  .skillsMenu.active {
+    display: block;
+    /* Estilos adicionales cuando está activo */
+    margin-top: 100px;
+    background-color: white;
+  }
+
+
+
+
+  @media (max-width: 768px) {
+    .acultar {
+      display: none;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .right {
+      display: none;
+    }
+    .acultar {
+      display: none;
+    }
+    .nav_toggler {
+      display: flex;
+    }
+    .right1 {
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.764);
+      height: 100vh;
+    }
+  }
+  

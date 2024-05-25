@@ -10,16 +10,20 @@ const Navbar = ({
     aboutRef,
     projectsRef,
     contactRef,
-    skillsRef
+    skillsRef,
+    mernRef
 }: {
     homeRef: React.RefObject<HTMLDivElement>
     aboutRef: React.RefObject<HTMLDivElement>
     projectsRef: React.RefObject<HTMLDivElement>
     contactRef: React.RefObject<HTMLDivElement>
     skillsRef: React.RefObject<HTMLDivElement>
+    mernRef: React.RefObject<HTMLDivElement>
 }) => {
     const [hovered, setHovered] = useState(false);
     const [navActive, setNavActive] = useState(false)
+    const [skillsMenuActive, setSkillsMenuActive] = useState(false);
+
 
     const handleButtonClick = (section: any) => {
         console.log(section)
@@ -32,7 +36,7 @@ const Navbar = ({
             aboutRef.current.scrollIntoView({ behavior: 'smooth' });
         } else if (section === 'projects' && projectsRef.current) {
             projectsRef.current.scrollIntoView({ behavior: 'smooth' });
-        } 
+        }
         else if (section === 'skills' && skillsRef.current) {
             skillsRef.current.scrollIntoView({ behavior: 'smooth' });
         }
@@ -51,8 +55,8 @@ const Navbar = ({
     const handleDownload = () => {
         // Crear un enlace de descarga invisible
         const link = document.createElement('a');
-        link.href = '/CVJoseChirinosActualizado.pdf'; // Ruta al archivo PDF
-        link.download = 'CVJoseChirinosActualizado.pdf'; // Nombre del archivo al descargar
+        link.href = '/CVJoseChirinos2024.pdf'; // Ruta al archivo PDF
+        link.download = 'CVJoseChirinos2024.pdf'; // Nombre del archivo al descargar
         document.body.appendChild(link);
         link.click();
         //document.body.removeChild(link); // Limpieza después de la descarga
@@ -60,18 +64,18 @@ const Navbar = ({
 
     return (
         <div className={styles.navouter}>
-            <div 
-            className={styles.left}
-             onClick={handleDownload}
-             onMouseEnter={() => setHovered(true)}
-            onMouseLeave={() => setHovered(false)}
-            title="Enlace descarga Curriculum Jose Chirinos"
-             >
+            <div
+                className={styles.left}
+                onClick={handleDownload}
+                onMouseEnter={() => setHovered(true)}
+                onMouseLeave={() => setHovered(false)}
+                title="Enlace descarga Curriculum Jose Chirinos"
+            >
                 <Image alt="" src={signature} width={700} height={700}
                     quality={100} className={styles.sign} />
-                     <Image alt="" src={dowload} width={500} height={500}
-                    quality={100}  className={[styles.sign, styles.acultar].join(' ')} />
-                   
+                <Image alt="" src={dowload} width={500} height={500}
+                    quality={100} className={[styles.sign, styles.acultar].join(' ')} />
+
             </div>
 
 
@@ -83,7 +87,21 @@ const Navbar = ({
                 <button onClick={() => handleButtonClick('home')}>Inicio</button>
                 <button onClick={() => handleButtonClick('about')}>Acerca</button>
                 <button onClick={() => handleButtonClick('projects')}>Proyectos</button>
-                <button onClick={() => handleButtonClick('skills')}>Habilidades</button>
+                <button
+                    onMouseEnter={() => setSkillsMenuActive(true)}
+                    onMouseLeave={() => setSkillsMenuActive(false)}
+                    onClick={() => handleButtonClick('skills')}>Habilidades</button>
+                {skillsMenuActive && (
+                    <div className={styles.skillsMenu}>
+                        {/* Aquí puedes agregar el contenido del menú de habilidades */}
+                        <button>Habilidad11111111111111 1</button>
+                        <button>Habilidad222222222222222 2</button>
+                        <button>Habilidad3333333333333</button>
+                        <button>Habilidad4444444444 4</button>
+                        <button>Habilidad555555555555 5</button>
+                    </div>
+                )}
+
                 <button onClick={() => handleButtonClick('contact')}>Contacto</button>
             </div>
 
