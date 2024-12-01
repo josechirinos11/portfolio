@@ -40,9 +40,7 @@ export default function Home() {
         <AboutSection />
       </div>
 
-      <div ref={mernRef} id="MERN">
-        <Mern />
-      </div>
+     
 
 
       <div ref={projectsRef} id="projects-section">

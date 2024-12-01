@@ -14,20 +14,23 @@ const PortfolioSection = () => {
           </div>
         </div>
         <div className={styles.right}>
-          
+
           <div className={styles.stat}>
             <h1>3</h1>
             <p>Años<br></br> de Experiencia</p>
-
+            <p>Dale Click a mi aplicacion en desarrollado</p>
+            <a href="https://app-felman-frontend.vercel.app/login" target="_blank" className={styles.enlace}>
+              Enlace a la web de la aplicación
+            </a>
           </div>
         </div>
 
       </div>
       <Image src={mainImg} className={styles.mainimg} alt="mainimg" quality={100} />
       <div className={styles.maintextdiv}>
-        <p>Yo soy un </p>
+        <p>Desarrollador</p>
         <h1><span>&nbsp;</span>FULL STACK</h1>
-        <h2>Desarrollador</h2>
+        <h2></h2>
       </div>
       <video src={'/smoke1.webm'} autoPlay loop muted
         className={styles.smokevideo}

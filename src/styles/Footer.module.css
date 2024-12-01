@@ -20,7 +20,24 @@
     font-size: 25px;
     color: grey;
 }
-
+.enlace {
+    color: #ff5733; /* Color brillante (puedes cambiarlo) */
+    font-size: 24px; /* Tamaño de fuente grande */
+    font-weight: bold; /* Negrita */
+    text-decoration: none; /* Sin subrayado por defecto */
+    background-color: #f0f0f0; /* Fondo de color claro */
+    padding: 10px 20px; /* Relleno alrededor del texto */
+    border-radius: 8px; /* Bordes redondeados */
+    display: inline-block; /* Asegura que el enlace se comporte como un bloque */
+    margin-top: 20px; /* Espaciado superior */
+    transition: all 0.3s ease; /* Animación suave */
+  }
+  
+  .enlace:hover {
+    color: white; /* Cambia el color de la fuente al pasar el ratón */
+    background-color: #ff5733; /* Cambia el fondo al pasar el ratón */
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño cuando se pasa el ratón */
+  }
 .left span {
     color: white;
 }

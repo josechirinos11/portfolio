@@ -15,8 +15,8 @@ import { EffectCoverflow, Pagination } from 'swiper/modules';
 
 import Image from 'next/image'
 import imgNext from '@/assets/CapturaNext.png'
-import imgGrpahql from '@/assets/Captura.png'
-import imgReactNative from '@/assets/CapturaReactNative.jpg'
+import imgGrpahql from '@/assets/reactYouApp.png'
+import imgReactNative from '@/assets/reactNativeYouApp.png'
 import imgNode from '@/assets/CapturaNode.png'
 
 
@@ -51,12 +51,20 @@ const Projects = () => {
     <div className={styles.projectdiv}>
       <h1>Muestra de Proyecto</h1>
       <h2 className={styles.titulo}>
-        <span className={styles.orange}>My</span>
-        <span className={styles.blue}>Company</span>
+        <span className={styles.orange}>Aun en </span>
+        <span className={styles.blue}>Desarrollo</span>
       </h2>
       <p className={styles.parrafo}>
-        Estoy en el desarrollo una aplicación llamada MyCompany, el cual tiene todo lo que se requiere para un perfil FullStack una solución integral dividida en cuatro Partes fundamentales. El backend, construido con GraphQL y MongoDB, garantiza un manejo eficiente de los datos respaldado por tecnologías sólidas ocupo otra forma de hacer el backend con Node.js y Firebase. El frontend, desarrollado en React con Next.js, proporciona una experiencia de usuario fluida y dinámica. Completando el ecosistema, la versión móvil está creada en React Native, asegurando una aplicación multiplataforma de alto rendimiento.
+        Estoy en el desarrollo una aplicación llamada YouApp, el cual tiene todo lo que se requiere para un perfil
+         FullStack una solución integral . El backend, construido con Nodejs y
+          MongoDB. El frontend, desarrollado
+           en React.js, proporciona una experiencia de usuario 
+           fluida y dinámica. Completando el ecosistema, la versión móvil está creada en React Native, asegurando una aplicación
+            multiplataforma de alto rendimiento.
       </p>
+      <a href="https://app-felman-frontend.vercel.app/login" target="_blank" className={styles.enlace}>
+  Enlace a la web de la aplicación
+</a>
       <div className='projectswipercontainer'>
         <Swiper
           effect={'coverflow'}
@@ -81,14 +89,14 @@ const Projects = () => {
             <div className={styles.projectcard}
               onClick={() => handleOpenModal({
                 proyecto: '1',
-                descripcion: 'Desarrollo de una aplicación móvil utilizando React Native. Proporciona una experiencia de usuario fluida y nativa en dispositivos Android. Aprovechan las funcionalidades nativas del dispositivo, como la cámara, el GPS y las notificaciones push.',
+                descripcion: 'Desarrollado utilizando React Native. Proporciona una experiencia de usuario fluida y nativa en dispositivos Android. Aprovechan las funcionalidades nativas del dispositivo, como la cámara, el GPS y las notificaciones push.',
 
-                tecnologias: 'React Native, Apollo Client, Storage',
-                enlace: 'https://github.com/josechirinos11/myCompanyReactNavive',
+                tecnologias: 'React Native y MongooDB',
+                enlace: 'https://github.com/josechirinos11/AppNativeFelman',
                 imagen: imgReactNative
               })}
             >
-              <h1>Projecto</h1>
+              <h1>Projecto YouApp</h1>
               <h1>con</h1>
               <h1>React Native</h1>
             </div>
@@ -97,47 +105,33 @@ const Projects = () => {
             <div className={styles.projectcard}
               onClick={() => handleOpenModal({
                 proyecto: '2',
-                descripcion: 'Implementacion de un servidor GraphQL que se comunica con una base de datos MongoDB para gestionar la comunicación entre el cliente y el servidor. Solicitando solo los datos que se requieren a la base nosql de MongoDB.',
-                tecnologias: 'GraphQL, Apollo Server, MongoDB',
-                enlace: 'https://github.com/josechirinos11/myCompanyGraphQL',
+                descripcion: 'Con una base de datos MongoDB para gestionar la comunicación entre el cliente y el servidor. Esta aplicacion busca poder dar una herramienta a las empresas de fabrica y servivios.',
+                tecnologias: 'React y MongoDB',
+                enlace: 'https://github.com/josechirinos11/AppFelmanFrontend',
                 imagen: imgGrpahql
               })}
             >
-              <h1>Projecto</h1>
-              <h1>con</h1>
-              <h1>GraphQL</h1>
-              <h1> y </h1>
-              <h1>MongoDB</h1>
+              <h1>Projecto YouApp</h1>
+              <h1></h1>
+              <h1>Frontend</h1>
+              <h1> con </h1>
+              <h1>React</h1>
             </div>
           </SwiperSlide>
-          <SwiperSlide>
-            <div className={styles.projectcard}
-              onClick={() => handleOpenModal({
-                proyecto: '3',
-                descripcion: 'Node.js tanto para el desarrollo del backend y mientras que las plantillas Handlebars se utilizan para generar las vistas del frontend , creando así una aplicación fullstack. El backend se comunica con la base de datos Firebase para almacenar y recuperar datos en tiempo real.',
-                tecnologias: 'Nodejs, Express.js, Firebase',
-                enlace: 'https://github.com/josechirinos11/myCompanyNodejs',
-                imagen: imgNode
-              })}
-            >
-              <h1>Projecto</h1>
-              <h1>con</h1>
-              <h1>Nodejs y Firebase</h1>
-            </div>
-          </SwiperSlide>
+      
           <SwiperSlide>
             <div className={styles.projectcard}
               onClick={() => handleOpenModal({
                 proyecto: '4',
-                descripcion: 'Este proyecto se enfoca en el desarrollo del frontend utilizando React con Next.js. Con Next.js, se puede mejorar la velocidad de carga y la optimización del SEO de la aplicación web.',
-                tecnologias: 'React, Nextjs, Apollo Client',
-                enlace: 'https://github.com/josechirinos11/myCompanyNext',
+                descripcion: 'Es todo el backend ocupado para el frontend web y movil, usando express y mongoose para la conecion de base de datos.',
+                tecnologias: 'Nodejs, express',
+                enlace: 'https://github.com/josechirinos11/AppFelmanBackend',
                 imagen: imgNext
               })}
             >
-              <h1>Projecto</h1>
-              <h1>con</h1>
-              <h1>React y Nextjs</h1>
+              <h1>Projecto YouApp</h1>
+              <h1>Backend</h1>
+              <h1>Node y Mongoose</h1>
             </div>
           </SwiperSlide>
 

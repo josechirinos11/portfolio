@@ -9,7 +9,9 @@ const Footer = () => {
         no dudes en contactarme
           <span>   josechirinos11@gmail.com</span>
         </p>
-       
+        <a href="https://app-felman-frontend.vercel.app/login" target="_blank" className={styles.enlace}>
+              Enlace a la web de la aplicación
+            </a>
       </div>
 
       <div className={styles.right}>
@@ -19,7 +21,10 @@ const Footer = () => {
     <hr className={styles.line} /> {/* Línea horizontal */}
     Nunca parar<br /> de aprender
   </h1>
+  <p>No es mi lema, es de Platzi, pero lo uso todos los dias para fortalecer mi mente
+        </p>
 </div>
+
     </div>
   )
 }
