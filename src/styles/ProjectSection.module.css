@@ -86,6 +86,7 @@
 
 
 .parrafo {
+  width: 50%; /* Ancho del párrafo */
   font-family: Arial, sans-serif;
   font-size: 20px;
   line-height: 1.5;

@@ -91,16 +91,7 @@ const Navbar = ({
                     onMouseEnter={() => setSkillsMenuActive(true)}
                     onMouseLeave={() => setSkillsMenuActive(false)}
                     onClick={() => handleButtonClick('skills')}>Habilidades</button>
-                {skillsMenuActive && (
-                    <div className={styles.skillsMenu}>
-                        {/* Aquí puedes agregar el contenido del menú de habilidades */}
-                        <button>Habilidad11111111111111 1</button>
-                        <button>Habilidad222222222222222 2</button>
-                        <button>Habilidad3333333333333</button>
-                        <button>Habilidad4444444444 4</button>
-                        <button>Habilidad555555555555 5</button>
-                    </div>
-                )}
+
 
                 <button onClick={() => handleButtonClick('contact')}>Contacto</button>
             </div>

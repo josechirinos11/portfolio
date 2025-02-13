@@ -31,7 +31,7 @@ const Projects = () => {
     <div className={styles.projectdiv}>
       <h1>My Skills</h1>
       <a href="https://app-felman-frontend.vercel.app/login" target="_blank" className={styles.enlace}>
-  Enlace a la web de la aplicación
+      Aplicación MERN STACK
 </a>
 
       <div className='projectswipercontainer'>

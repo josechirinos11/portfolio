@@ -17,6 +17,7 @@
     gap: 10px;
 }
 .enlace {
+    align-items: center;
     color: #ff5733; /* Color brillante (puedes cambiarlo) */
     font-size: 24px; /* Tamaño de fuente grande */
     font-weight: bold; /* Negrita */
@@ -28,6 +29,11 @@
     margin-top: 20px; /* Espaciado superior */
     transition: all 0.3s ease; /* Animación suave */
   }
+  const enlace.a {
+    display: flex; /* Habilita flexbox para centrar verticalmente */
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+   }
   
   .enlace:hover {
     color: white; /* Cambia el color de la fuente al pasar el ratón */

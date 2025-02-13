@@ -64,15 +64,21 @@
 
 .right button,
 .right1 button {
-  background-color: transparent;
+  background-color: black;
   color: rgb(153, 153, 153);
   font-weight: 400;
   font-size: 18px;
-  border: none;
+  border-radius: 20px;
+  box-shadow:  5px 5px 15px #5a5a5a,
+             -5px -5px 15px #ffffff;
+  
+  border-color: #374151;
+  border-width: 1px;
   padding: 3px 0px;
   -webkit-text-stroke: 0.5px rgb(212, 212, 212);
   transition: transform 0.3s ease;
   overflow: hidden;
+  width: calc(10% + 50px);
 }
 
 .right button:hover {
@@ -81,11 +87,10 @@
 color: black;
   
   background-color: #d1d5db;
-  
+  border: none;
   border-radius: 20px;
   
-  border-color: #374151;
-  border-width: 1px;
+
 
   
   border-radius: 20px;

@@ -49,7 +49,8 @@ const Projects = () => {
 
   return (
     <div className={styles.projectdiv}>
-      <h1>Muestra de Proyecto</h1>
+      <h1>Proyecto</h1>
+     <br/> 
       <h2 className={styles.titulo}>
         <span className={styles.orange}>Aun en </span>
         <span className={styles.blue}>Desarrollo</span>
@@ -63,7 +64,7 @@ const Projects = () => {
             multiplataforma de alto rendimiento.
       </p>
       <a href="https://app-felman-frontend.vercel.app/login" target="_blank" className={styles.enlace}>
-  Enlace a la web de la aplicación
+      Aplicación MERN STACK
 </a>
       <div className='projectswipercontainer'>
         <Swiper

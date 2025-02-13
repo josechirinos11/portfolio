@@ -20,7 +20,7 @@ const PortfolioSection = () => {
             <p>Años<br></br> de Experiencia</p>
             <p>Dale Click a mi aplicacion en desarrollado</p>
             <a href="https://app-felman-frontend.vercel.app/login" target="_blank" className={styles.enlace}>
-              Enlace a la web de la aplicación
+              Aplicación MERN STACK
             </a>
           </div>
         </div>
