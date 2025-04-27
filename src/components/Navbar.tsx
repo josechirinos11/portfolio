@@ -55,8 +55,8 @@ const Navbar = ({
     const handleDownload = () => {
         // Crear un enlace de descarga invisible
         const link = document.createElement('a');
-        link.href = '/CV Jose Chirinos Mayo 2025.pdf'; // Ruta al archivo PDF
-        link.download = 'CV Jose Chirinos Mayo 2025.pdf'; // Nombre del archivo al descargar
+        link.href = '/CV Jose Chirinos Mayo 2025 actualizado.pdf'; // Ruta al archivo PDF
+        link.download = 'CV Jose Chirinos Mayo 2025 actualizado.pdf'; // Nombre del archivo al descargar
         document.body.appendChild(link);
         link.click();
         //document.body.removeChild(link); // Limpieza después de la descarga
