@@ -1,0 +1,110 @@
+.carouselWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 380px;
+  gap: 24px;
+  margin: 32px 0;
+}
+
+.arrowBtn {
+  background: #2874A6;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 1.8rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s, transform 0.3s;
+}
+.arrowBtn:hover {
+  background: #ffa200;
+  transform: scale(1.12);
+}
+
+.certificateCard {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.09);
+  padding: 24px 16px;
+  min-width: 280px;
+  max-width: 330px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  animation: fadeInUp 0.8s;
+}
+.certInfo {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.certName {
+  font-size: 1.1rem;
+  color: #2874A6;
+  font-weight: 600;
+  margin-bottom: 6px;
+  text-align: center;
+}
+.downloadBtn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: #ffa200;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 14px;
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background 0.3s, transform 0.3s;
+  cursor: pointer;
+  margin-top: 2px;
+}
+.downloadBtn:hover {
+  background: #2874A6;
+  color: #fff;
+  transform: scale(1.06);
+}
+.pdfPreview {
+  width: 200px;
+  height: 200px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background: #f9f9f9;
+}
+@media (max-width: 900px) {
+  .carouselWrapper {
+    flex-direction: column;
+    gap: 12px;
+    min-height: 320px;
+  }
+  .certificateCard {
+    min-width: 90vw;
+    max-width: 95vw;
+    padding: 12px 4px;
+  }
+  .pdfPreview {
+    width: 80vw;
+    height: 120px;
+  }
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

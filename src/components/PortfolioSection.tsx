@@ -16,11 +16,14 @@ const PortfolioSection = () => {
         <div className={styles.right}>
 
           <div className={styles.stat}>
-            <h1>3</h1>
+            <h1>4</h1>
             <p>Años<br></br> de Experiencia</p>
             <p>Dale Click a mi aplicacion en desarrollado</p>
             <a href="https://app-felman-frontend.vercel.app/login" target="_blank" className={styles.enlace}>
-              Aplicación MERN STACK
+              App MERN STACK
+            </a>
+            <a href="https://proyectoceac-1.onrender.com/index.php?controller=auth&action=login" target="_blank" className={styles.enlace}>
+              APP con PHP y SQL
             </a>
           </div>
         </div>

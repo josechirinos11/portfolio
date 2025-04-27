@@ -9,7 +9,7 @@
     object-position: center;
 }
 .projectdiv {
-    background: linear-gradient(to bottom left, #00ff99 0%, #57f900 100%);
+    background: linear-gradient(135deg, #fff 0%, #000 100%);
     width: 100%;
     min-height: 100vh;
     display: flex;
@@ -17,9 +17,6 @@
     justify-content: center;
     align-items: center;
     padding: 10vh 0px;
-
-
-    
 }
 .enlace {
     color: #ff5733; /* Color brillante (puedes cambiarlo) */

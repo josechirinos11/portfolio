@@ -113,7 +113,7 @@
 }
 
 .projectdiv {
-    background: linear-gradient(to bottom right, #ffa200 0%, #00ff99 100%);
+    background: linear-gradient(135deg, rgb(139, 204, 69) 0%, #fff 100%);
     width: 100%;
     min-height: 100vh;
     display: flex;
@@ -170,4 +170,14 @@
     font-style: normal;
     font-size: 2rem;
     color: black;
+}
+
+@media (max-width: 1000px) {
+  .parrafo {
+    width: 90%;
+    padding: 10px;
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 0 auto 20px auto;
+  }
 }

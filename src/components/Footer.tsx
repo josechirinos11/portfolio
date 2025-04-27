@@ -10,8 +10,11 @@ const Footer = () => {
           <span>   josechirinos11@gmail.com</span>
         </p>
         <a href="https://app-felman-frontend.vercel.app/login" target="_blank" className={styles.enlace}>
-        Aplicación MERN STACK
+        App MERN STACK
             </a>
+        <a href="https://proyectoceac-1.onrender.com/index.php?controller=auth&action=login" target="_blank" className={styles.enlace}>
+            APP con PHP y SQL
+        </a>
       </div>
 
       <div className={styles.right}>

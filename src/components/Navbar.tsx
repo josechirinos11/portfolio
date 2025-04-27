@@ -11,7 +11,8 @@ const Navbar = ({
     projectsRef,
     contactRef,
     skillsRef,
-    mernRef
+    mernRef,
+    coursesRef
 }: {
     homeRef: React.RefObject<HTMLDivElement>
     aboutRef: React.RefObject<HTMLDivElement>
@@ -19,6 +20,7 @@ const Navbar = ({
     contactRef: React.RefObject<HTMLDivElement>
     skillsRef: React.RefObject<HTMLDivElement>
     mernRef: React.RefObject<HTMLDivElement>
+    coursesRef: React.RefObject<HTMLDivElement>
 }) => {
     const [hovered, setHovered] = useState(false);
     const [navActive, setNavActive] = useState(false)
@@ -42,6 +44,8 @@ const Navbar = ({
         }
         else if (section === 'contact' && contactRef.current) {
             contactRef.current.scrollIntoView({ behavior: 'smooth' });
+        } else if (section === 'courses' && coursesRef.current) {
+            coursesRef.current.scrollIntoView({ behavior: 'smooth' });
         } else {
             // Provide clear error message for missing section
             console.warn(`Section "${section}" not found. Please ensure it exists.`);
@@ -91,8 +95,13 @@ const Navbar = ({
                     onMouseEnter={() => setSkillsMenuActive(true)}
                     onMouseLeave={() => setSkillsMenuActive(false)}
                     onClick={() => handleButtonClick('skills')}>Habilidades</button>
-
-
+                <button
+                    className={styles.navButton}
+                    onClick={() => handleButtonClick('courses')}
+                    title="Ir a Cursos y Certificaciones"
+                >
+                    Cursos y Certificaciones
+                </button>
                 <button onClick={() => handleButtonClick('contact')}>Contacto</button>
             </div>
 
@@ -101,6 +110,13 @@ const Navbar = ({
                 <button onClick={() => handleButtonClick('about')}>Acerca</button>
                 <button onClick={() => handleButtonClick('projects')}>Proyectos</button>
                 <button onClick={() => handleButtonClick('skills')}>Habilidades</button>
+                <button
+                    className={styles.navButton}
+                    onClick={() => handleButtonClick('courses')}
+                    title="Ir a Cursos y Certificaciones"
+                >
+                    Cursos y Certificaciones
+                </button>
                 <button onClick={() => handleButtonClick('contact')}>Contacto</button>
             </div>
             }

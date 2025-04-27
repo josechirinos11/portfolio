@@ -17,7 +17,10 @@ const AboutSection = () => {
             <p>Mi compromiso con un código limpio y eficiente garantiza un mantenimiento y escalabilidad fáciles para soluciones personalizadas que abordan cualquier necesidad específica.</p>
 
             <a href="https://app-felman-frontend.vercel.app/login" target="_blank" className={styles.enlace}>
-                Aplicación MERN STACK
+                App MERN STACK
+            </a>
+            <a href="https://proyectoceac-1.onrender.com/index.php?controller=auth&action=login" target="_blank" className={styles.enlace}>
+                APP con PHP y SQL
             </a>
         </div>
         <Image src={AboutImg} alt="aboutimg" quality={100} />
