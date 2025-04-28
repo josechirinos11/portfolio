@@ -71,9 +71,9 @@ const experience = [
 const CoursesSection = () => {
   return (
     <section className={styles.coursesSection}>
-      <h2 className={styles.title}>Cursos y Certificados</h2>
+      <h2 className={styles.title}>Experiencia Laboral  (últimos 4 años)</h2>
       <div className={styles.descriptionBox}>
-        <p className={styles.descriptionTitle}>Resumen de Experiencia (últimos 4 años):</p>
+        
         <ul className={styles.experienceList}>
           {experience.map((exp, idx) => (
             <li key={idx} className={styles.experienceItem}>
@@ -84,7 +84,9 @@ const CoursesSection = () => {
           ))}
         </ul>
       </div>
+      <h1 className={styles.titleCertificado}>Certificados</h1>
       <div className={styles.coursesList}>
+      
         {courses.map((course, idx) => (
           <div className={styles.courseCard} key={idx}>
             <div className={styles.courseInfo}>
@@ -107,7 +109,8 @@ const CoursesSection = () => {
           </div>
         ))}
       </div>
-      <h3 className={styles.certTitle}>Certificados destacados</h3>
+      
+      <h2 className={styles.certTitle}>Certificados destacados</h2>
       <CertificatesCarousel />
     </section>
   );
