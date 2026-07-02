@@ -43,9 +43,17 @@ const courses = [
 
 const experience = [
   {
+    title: "AIR EUROPA",
+    location: "España",
+    date: "feb. 2026 - Actualidad",
+    role: "Desarrollador de Software",
+    description:
+      "Desarrollo y mantenimiento de aplicaciones de escritorio de la aerolínea con Delphi y PL/SQL sobre Oracle, además de desarrollo web con Angular y backend en Go dentro del equipo de mantenimiento.",
+  },
+  {
     title: "FELMAN",
     location: "Valencia",
-    date: "dic. 2024 - Actualidad",
+    date: "dic. 2024 - feb. 2026",
     role: "Personal TI",
     description:
       "Mecanizado de perfiles de aluminios para ventanas en SICA2 y PROF2, modernización de procesos en la interfaz operario producción, implementando actualizaciones con ReactJS y optimizando la gestión de datos con MySQL.",
@@ -56,7 +64,7 @@ const experience = [
     date: "ene. 2022 - Actualidad",
     role: "Profesional independiente",
     description:
-      "Compromiso con un servicio al cliente excepcional, utilizando tecnologías de vanguardia como ReactJS, NodeJS, ExpressJS, Git, Firebase y MongoDB dentro del stack MERN. Con más de 4 años de experiencia, entregando proyectos puntualmente.",
+      "Compromiso con un servicio al cliente excepcional, utilizando tecnologías de vanguardia como ReactJS, NodeJS, ExpressJS, Git, Firebase y MongoDB dentro del stack MERN. Experiencia adicional con Delphi y PL/SQL en entornos empresariales Oracle. Con más de 5 años de experiencia, entregando proyectos puntualmente.",
   },
   {
     title: "PROINEX SPA",
@@ -71,7 +79,7 @@ const experience = [
 const CoursesSection = () => {
   return (
     <section className={styles.coursesSection}>
-      <h2 className={styles.title}>Experiencia Laboral  (últimos 4 años)</h2>
+      <h2 className={styles.title}>Experiencia Laboral  (últimos 5 años)</h2>
       <div className={styles.descriptionBox}>
         
         <ul className={styles.experienceList}>

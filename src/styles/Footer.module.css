@@ -20,26 +20,57 @@
     font-size: 25px;
     color: grey;
 }
-.enlace {
-    color: #ff5733; /* Color brillante (puedes cambiarlo) */
-    font-size: 24px; /* Tamaño de fuente grande */
-    font-weight: bold; /* Negrita */
-    text-decoration: none; /* Sin subrayado por defecto */
-    background-color: #f0f0f0; /* Fondo de color claro */
-    padding: 10px 20px; /* Relleno alrededor del texto */
-    border-radius: 8px; /* Bordes redondeados */
-    display: inline-block; /* Asegura que el enlace se comporte como un bloque */
-    margin-top: 20px; /* Espaciado superior */
-    transition: all 0.3s ease; /* Animación suave */
-  }
-  
-  .enlace:hover {
-    color: white; /* Cambia el color de la fuente al pasar el ratón */
-    background-color: #ff5733; /* Cambia el fondo al pasar el ratón */
-    transform: scale(1.1); /* Aumenta ligeramente el tamaño cuando se pasa el ratón */
-  }
+
 .left span {
     color: white;
+}
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 24px;
+}
+
+.input,
+.textarea {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #444;
+    border-radius: 8px;
+    background: #1a1a1a;
+    color: white;
+    font-size: 16px;
+    font-family: inherit;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.input:focus,
+.textarea:focus {
+    border-color: #ff5733;
+}
+
+.textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.submitBtn {
+    padding: 12px 24px;
+    background: #ff5733;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.submitBtn:hover {
+    background: #e04e2d;
+    transform: scale(1.03);
 }
 
 .right h1 {
